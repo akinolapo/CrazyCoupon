@@ -1,0 +1,374 @@
+/*Font famiily*/
+
+@font-face {
+    font-family: "AscenderSansW01-Bold";
+    src: url("//db.onlinewebfonts.com/t/6fe7bdf68f26f86a82c5b0c7813d176e.eot");
+    src: url("//db.onlinewebfonts.com/t/6fe7bdf68f26f86a82c5b0c7813d176e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/6fe7bdf68f26f86a82c5b0c7813d176e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/6fe7bdf68f26f86a82c5b0c7813d176e.woff") format("woff"), url("//db.onlinewebfonts.com/t/6fe7bdf68f26f86a82c5b0c7813d176e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/6fe7bdf68f26f86a82c5b0c7813d176e.svg#AscenderSansW01-Bold") format("svg");
+}
+
+@font-face {
+    font-family: "Contra";
+    src: url("//db.onlinewebfonts.com/t/0f9ca24f74521531fb74544228292c13.eot");
+    src: url("//db.onlinewebfonts.com/t/0f9ca24f74521531fb74544228292c13.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0f9ca24f74521531fb74544228292c13.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0f9ca24f74521531fb74544228292c13.woff") format("woff"), url("//db.onlinewebfonts.com/t/0f9ca24f74521531fb74544228292c13.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0f9ca24f74521531fb74544228292c13.svg#Contra") format("svg");
+}
+
+
+/*End of font*/
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #ddd;
+    font-family: Contra;
+}
+
+a {
+    text-decoration: none;
+}
+
+.topBar ul {
+    list-style: none;
+    display: flex;
+    padding: 10px 60px 10px;
+    justify-content: space-between;
+}
+
+.topBar ul li.leftTopBar {}
+
+.topBar ul li.rightTopBar {}
+
+.topBar a {
+    color: #80a8ca;
+}
+
+.topBar {
+    background-color: #093562;
+    color: #80a8ca;
+    font-family: AscenderSansW01-Bold;
+}
+
+.middleBar {
+    background-color: #084274;
+    color: #fff;
+    font-size: 40px;
+    padding: 20px 60px 20px;
+    display: flex;
+    font-family: AscenderSansW01-Bold;
+}
+
+.tagline {
+    float: left;
+}
+
+.tagline p {
+    font-size: 20px;
+}
+
+.optionBar {
+    float: right;
+    margin-right: 2%;
+}
+
+.optionBar select {
+    padding: 12.5px 80px 15px;
+}
+
+.optionBar form {
+    float: right;
+    margin-left: 10px;
+}
+
+.optionBar form input {
+    padding: 12.5px 0 15px 5px;
+}
+
+.optionBar form button {
+    padding: 12.5px 10px 15px 10px;
+    margin-left: -5%;
+}
+
+.webID {
+    width: 100%;
+}
+
+.menuBar {
+    background-color: #fff;
+    color: #000;
+    padding: 15px 60px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: AscenderSansW01-Bold;
+}
+
+.menuBar a {
+    color: #000;
+}
+
+.menuBar ul {
+    display: flex;
+    list-style: none;
+}
+
+.menuBar ul li {
+    border-right-style: solid;
+    border-right-color: #000;
+    border-right-width: 1px;
+    padding: 0 10px 0 0;
+}
+
+.topBanner {
+    font-family: AscenderSansW01-Bold;
+    color: #fff;
+    padding: 10px 140px 10px;
+    background: linear-gradient(90deg, rgb(16, 134, 1) 60%, rgb(16, 134, 1) 65%, rgba(16, 133, 0, 0.3) 100%), url(/media/couponShopping.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    border: 0;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: .5%;
+    font-size: 30px;
+    line-height: 2;
+    object-fit: cover;
+}
+
+.topBanner h2 {
+    margin-top: 2%;
+}
+
+.topBanner h3 {
+    font-size: 25px;
+}
+
+.topBanner p {
+    text-align: left;
+    width: 70%;
+    font-size: 18px;
+    margin-bottom: 3%;
+}
+
+.main {
+    padding: 13px 20px 15px;
+    float: left;
+    background-color: #fff;
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+.couponBox {
+    display: flex;
+}
+
+.leftBox {
+    margin-right: 20px;
+}
+
+.offPrice {
+    padding: 15px 50px 15px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #ddd;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 2px;
+}
+
+#webName {
+    font-size: 12px;
+    text-align: center;
+    padding: 5px 50px 5px;
+    background-color: #f6f6f6;
+}
+
+.workRatio {
+    margin-top: 2px;
+    text-align: center;
+    padding: 15px 50px 15px;
+    background-color: #409d33;
+    color: white;
+    border-style: dotted;
+    margin-bottom: 2px;
+}
+
+#numOfVotes {
+    padding: 10px 50px 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.couponDetails {
+    line-height: 2;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7fbfc;
+    padding: 10px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #b8d3ee;
+}
+
+.couponDetails .coupon-button {
+    /* margin-left: 70px; */
+    /* padding: 10px 30px 10px; */
+    /* background-color: #074075; */
+    color: #b8d3ee;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+}
+
+.moreDetails {
+    background-color: #f7fbfc;
+    margin-top: 5px;
+    padding: 10px;
+    border-bottom: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #b8d3ee;
+}
+
+.fa-cut {
+    margin-left: -25px;
+}
+
+h4,
+h5 {
+    font-size: 20px;
+}
+
+h6 {
+    font-size: 15px;
+}
+
+.sideBar {
+    background-color: #fff;
+    margin-left: 71%;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.sideBarHeader {
+    background-color: #ddd;
+    padding: 10px;
+    border: solid;
+    border-width: 1px;
+}
+
+.storesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+    text-align: center;
+    padding: 10px 0 30px;
+}
+
+.coupon-button {
+    /* padding: 10px 0 10px 5px; */
+    border-top-right-radius: 20px;
+    z-index: 500;
+    position: relative;
+    /* margin-left: 67px; */
+}
+
+@media(max-width: 1239px) {
+    .main {
+        float: none;
+        margin-right: 2%;
+    }
+
+    .leftBox {
+        width: 40%;
+    }
+
+    .rightBox {
+        width: 100%;
+    }
+
+    #numOfVotes {
+        padding: 10px 120px 10px;
+    }
+
+    #webName {
+        padding: 5px 119.9px 5px;
+    }
+
+    .couponDetails button,
+    .coupon-button {
+        /* margin-left: 250px; */
+    }
+
+    .sideBar {
+        margin: 0;
+        margin-left: 3%;
+        margin-right: 2%;
+    }
+
+    .sideBarHeader {
+        text-align: center;
+    }
+
+    .storesList {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+
+
+/* Coupon button */
+
+.coupon-codes-container {
+    position: relative;
+}
+
+.coupon-button {
+    display:  flex;
+    align-items: center;
+    justify-items: center;
+    background-color: transparent;
+}
+.coupon-button.code-shown {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 300ms ease-in-out;
+}
+.coupon-button.code-shown.visible-code {
+    transition: opacity 300ms ease-in-out;
+    opacity: 1;
+}
+
+.coupon-button .eye {
+    background-color: #084274;
+    padding: 10px 16px;
+}
+
+.coupon-button .coupon-code {
+    /* padding: 0px 15px; */
+    font-size: 0.7em;
+    display: inline-block;
+    background-color: #084274;
+    padding: 12px 25px 12px 5px;
+    border-radius: inherit;
+}
+
+.coupon-button.code-shown .coupon-code {
+    /* padding: 0px 15px; */
+    padding: 5px;
+    padding-left: 25px;
+    overflow: auto;
+    width: 100%;
+    color: black;
+    display: block;
+    background-color: white;
+    cursor: text;
+}
