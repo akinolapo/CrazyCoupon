@@ -204,7 +204,9 @@ a {
 
 .couponDetails {
     line-height: 2;
-    display: flex;
+    /* display: flex; */
+    align-items: center;
+    justify-content: space-between;
     background-color: #f7fbfc;
     padding: 10px;
     border-bottom: solid;
@@ -212,10 +214,10 @@ a {
     border-bottom-color: #b8d3ee;
 }
 
-.couponDetails button {
-    margin-left: 70px;
-    padding: 10px 30px 10px;
-    background-color: #074075;
+.couponDetails .coupon-button {
+    /* margin-left: 70px; */
+    /* padding: 10px 30px 10px; */
+    /* background-color: #074075; */
     color: #b8d3ee;
     font-size: 25px;
     cursor: pointer;
@@ -266,12 +268,12 @@ h6 {
     padding: 10px 0 30px;
 }
 
-#hide {
-    padding: 10px 0 10px 5px;
+.coupon-button {
+    /* padding: 10px 0 10px 5px; */
     border-top-right-radius: 20px;
     z-index: 500;
     position: relative;
-    margin-left: 67px;
+    /* margin-left: 67px; */
 }
 
 @media(max-width: 1239px) {
@@ -297,8 +299,8 @@ h6 {
     }
 
     .couponDetails button,
-    #hide {
-        margin-left: 250px;
+    .coupon-button {
+        /* margin-left: 250px; */
     }
 
     .sideBar {
@@ -316,4 +318,57 @@ h6 {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-row-gap: 20px;
     }
+}
+
+
+
+/* Coupon button */
+
+.coupon-codes-container {
+    position: relative;
+}
+
+.coupon-button {
+    display:  flex;
+    align-items: center;
+    justify-items: center;
+    background-color: transparent;
+}
+.coupon-button.code-shown {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: opacity 300ms ease-in-out;
+}
+.coupon-button.code-shown.visible-code {
+    transition: opacity 300ms ease-in-out;
+    opacity: 1;
+}
+
+.coupon-button .eye {
+    background-color: #084274;
+    padding: 10px 16px;
+}
+
+.coupon-button .coupon-code {
+    /* padding: 0px 15px; */
+    font-size: 0.7em;
+    display: inline-block;
+    background-color: #084274;
+    padding: 12px 25px 12px 5px;
+    border-radius: inherit;
+}
+
+.coupon-button.code-shown .coupon-code {
+    /* padding: 0px 15px; */
+    padding: 5px;
+    padding-left: 25px;
+    overflow: auto;
+    width: 100%;
+    color: black;
+    display: block;
+    background-color: white;
+    cursor: text;
 }
